@@ -1,0 +1,62 @@
+{
+  "name": "problem-set-07",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.2.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest-style-matchers": "^0.1.1",
+    "jquery": "^3.3.1",
+    "raf": "^3.4.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "readline-sync": "^1.4.9"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "shared-node-browser": true,
+      "jquery": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+      "no-console": "off",
+      "semi": [
+        "off",
+        "always",
+        {
+          "omitLastInOneLineBlock": true
+        }
+      ],
+      "camelcase": [
+        "error"
+      ]
+    }
+  }
+}
